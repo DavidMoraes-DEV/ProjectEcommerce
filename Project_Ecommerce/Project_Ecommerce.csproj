@@ -1,0 +1,277 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Home\**" />
+    <Compile Remove="Views\Shared\**" />
+    <Compile Remove="wwwroot\css\**" />
+    <Compile Remove="wwwroot\js\**" />
+    <Compile Remove="wwwroot\lib\**" />
+    <Content Remove="Views\Home\**" />
+    <Content Remove="Views\Shared\**" />
+    <Content Remove="wwwroot\css\**" />
+    <Content Remove="wwwroot\js\**" />
+    <Content Remove="wwwroot\lib\**" />
+    <EmbeddedResource Remove="Views\Home\**" />
+    <EmbeddedResource Remove="Views\Shared\**" />
+    <EmbeddedResource Remove="wwwroot\css\**" />
+    <EmbeddedResource Remove="wwwroot\js\**" />
+    <EmbeddedResource Remove="wwwroot\lib\**" />
+    <None Remove="Views\Home\**" />
+    <None Remove="Views\Shared\**" />
+    <None Remove="wwwroot\css\**" />
+    <None Remove="wwwroot\js\**" />
+    <None Remove="wwwroot\lib\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Models\ErrorViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\_ViewImports.cshtml" />
+    <Content Remove="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\js\bootstrap.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-4.2.1-dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\css\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\css\bootstrap.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\css\responsive.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\css\ui.css.map" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\js\jquery-2.0.0.min.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\js\script.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\bootstrap-ecommerce-uikit.sketch" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\32x32-transparent\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\64x64-transparent\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\64x64-white\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\android.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\apple.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\bag.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\ball.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\bar.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\book.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\building.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\bus.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\car.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\car_repair.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\cpu.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\desktop_windows.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\diamond.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\fix.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\homeitem.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\hotel.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\ic_camera_alt.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\med.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\money.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\more.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\motorbike.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\museum.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\pants.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\plane.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\playstore.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\restaurant.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\restaurant2.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\scissor.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\shipping.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\shirt.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\shopping copy 2.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\shopping copy 3.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\shopping copy.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\shopping.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\smartwatch.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\spa.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\sport.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\toy.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\university.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\watch.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\wifi.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\icons\svg\windows.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\shots\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-design\shots\Showcase.psd" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\fa-brands.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\fa-regular.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\fa-solid.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\fontawesome.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_animated.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_core.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_fixed-width.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_icons.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_larger.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_list.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_mixins.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_screen-reader.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_stacked.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\scss\_variables.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\fontawesome\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\fonts\material-icons\MaterialIcons-Regular.woff2" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\images\banners\bg-pattern.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\images\Thumbs.db" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\plugins\fancybox\fancybox.min.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\plugins\owlcarousel\owl.carousel.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\plugins\owlcarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\plugins\prism\prism.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\plugins\slickslider\fonts\slick.svg" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\plugins\slickslider\slick.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\plugins\slickslider\slick.min.js" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_alert.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_background-variant.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_badge.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_border-radius.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_buttons.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_caret.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_clearfix.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_float.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_forms.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_gradients.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_grid-framework.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_grid.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_hover.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_image.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_list-group.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_lists.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_nav-divider.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_pagination.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_reset-text.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_resize.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_screen-reader.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_size.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_table-row.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_text-emphasis.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_text-hide.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_transition.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\mixins\_visibility.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_align.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_background.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_borders.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_clearfix.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_display.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_embed.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_flex.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_float.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_position.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_screenreaders.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_shadows.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_sizing.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_spacing.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_text.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\utilities\_visibility.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_alert.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_badge.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_bootstrap.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_breadcrumb.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_button-group.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_buttons.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_card.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_carousel.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_close.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_code.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_custom-forms.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_dropdown.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_forms.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_functions.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_grid.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_images.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_input-group.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_jumbotron.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_list-group.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_media.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_mixins.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_modal.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_nav.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_navbar.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_pagination.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_popover.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_print.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_progress.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_reboot.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_root.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_tables.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_tooltip.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_transitions.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_type.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_utilities.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap-assets\_variables.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\bootstrap.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\responsive.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\components\_buttons.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\components\_cards-product.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\components\_elements.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\components\_items.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\components\_lists.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\components\_menu.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\components\_plugin-styles.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\helpers\.DS_Store" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\helpers\_bg.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\helpers\_grid-24.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\helpers\_helper-classes.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\helpers\_mixins.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\helpers\_typography.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\pages\_page-common.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\pages\_page-detail.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\pages\_page-home.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\sections\_footer.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\sections\_header.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\sections\_sidebar.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\_base.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\_variables-custom.scss" />
+    <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\_bootstrap-ecommerce.com.url" />
+    <None Include="wwwroot\resources\lib\charts\charts.js" />
+    <None Include="wwwroot\resources\lib\dashboard\dashboard.js" />
+    <None Include="wwwroot\resources\lib\feather\feather.js" />
+    <None Include="wwwroot\resources\lib\holder\holder.min.js" />
+    <None Include="wwwroot\resources\lib\jquery3.3.1\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\resources\lib\popper1.14.6\popper.min.js" />
+  </ItemGroup>
+
+</Project>
